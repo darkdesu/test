@@ -1,0 +1,981 @@
+<!doctype html>  
+<html lang="ru">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style.css">  
+    <title>Стоматологическая клиника "Астрадент"</title>  
+  <style>
+    body{
+    background-color:rgb(0, 92, 179);
+  }
+  html { 
+    scroll-behavior: smooth; /* Плавный скроллинг */ 
+   
+    border: none; /* Убедитесь, что границы отсутствуют */ 
+  
+  } 
+  
+  body, section {
+    margin: 0;
+    padding: 0;
+  
+  }
+  .header { 
+    color: white;
+    display: flex;  /* Используем Flexbox для выравнивания элементов */ 
+    justify-content: space-between;  /* Распределяем элементы по горизонтали с отступами между ними */ 
+    align-items: center;  /* Выравнивание элементов по центру вертикально */ 
+    padding: 5px 35px; /* Отступы внутри шапки */ 
+  z-index: 2;
+  } 
+  
+  /* Стили для логотипа */
+  .logo { 
+    text-decoration: none;  /* Убираем подчеркивание у логотипа */ 
+    color: white;
+    font-size: 30px;  /* Размер шрифта логотипа */ 
+    font-weight: bold;  /* Жирный шрифт для логотипа */ 
+  } 
+  
+  /* Стили для меню */
+  .menu { 
+    display: flex;  /* Используем Flexbox для выравнивания элементов меню */ 
+  } 
+  
+  /* Стили для списка в меню */
+  .menu ul { 
+    display: flex;  /* Используем Flexbox для выравнивания элементов списка */ 
+    list-style: none;  /* Убираем маркеры списка */ 
+    padding: 0; /* Удаление стандартного отступа */ 
+    margin: 0; /* Удаление стандартного поля */ 
+    cursor: pointer;
+  } 
+  
+  /* Стили для каждого элемента списка в меню */
+  .menu ul li { 
+    margin: 0 10px;  /* Отступы между элементами списка */ 
+    cursor: pointer;
+  } 
+  
+  /* Стили для ссылок в меню */
+  .menu ul li a { 
+    text-decoration: none;  /* Убираем подчеркивание у ссылок */ 
+    padding: 10px;  /* Отступы внутри ссылок */ 
+    border-radius: 10px;  /* Закругленные углы для ссылок */ 
+    color: white;
+    display: inline-block;  /* Отображение ссылок как блочные элементы */ 
+    font-size: 18px;  /* Размер шрифта ссылок */ 
+    cursor: pointer;
+  } 
+  .nomer{
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .sv{
+   
+
+    background-color: rgb(62, 127, 201); 
+    border-radius: 40px;  /* Закругленные углы для ссылок */ 
+  
+    cursor: pointer;
+    text-decoration: none;  /* Убираем подчеркивание у ссылок */ 
+    padding: 10px;  /* Отступы внутри ссылок */ 
+    color: white;
+    display: inline-block;  /* Отображение ссылок как блочные элементы */ 
+    font-size: 18px;  /* Размер шрифта ссылок */ 
+    margin: 0 10px;  /* Отступы между элементами списка */ 
+    border: none;
+  
+  }
+  
+  .sv:hover {
+    background-color: rgb(61, 143, 236);  /* Цвет фона при наведении */
+    color: #fff;  /* Цвет текста при наведении */
+    }
+    
+  
+  
+  
+  /* 1 раздел*/
+  .about-us {
+    position: relative;  
+    height: 80vh;  
+  
+  gap:20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    z-index: 1;
+    font-style: italic;
+  
+  }
+  
+  .about-us .info {
+    position: relative;  
+  
+    padding: 40px; /* Увеличиваем отступы для лучшего восприятия */
+    color: rgb(255, 255, 255);
+  
+  }
+  
+  .about-us .info h2 {
+    font-size: 90px; /* Уменьшаем размер заголовка для гармонии */
+    margin-bottom: 15px; /* Увеличиваем расстояние между заголовками */
+    color: rgb(255, 255, 255);
+  
+  }
+  
+  .about-us .info h3 {
+    font-size: 35px; /* Уменьшаем размер подзаголовка */
+    margin: 0; 
+    color: rgb(255, 255, 255);
+  
+  }
+  
+  .image{
+  width:550px;
+  z-index: 1;
+  
+  
+  }
+  .image1{
+  width:400px;
+  height:auto;
+  margin-bottom: 32px; /* Увеличиваем расстояние между заголовками */
+
+  
+  }
+  
+  .bbb {
+  
+  background-color: rgb(51, 125, 209);
+  border-radius: 40px;  /* Закругленные углы */
+  cursor: pointer;  /* Курсор при наведении */
+  width: 100%;  /* Ширина кнопки на всю ширину родительского элемента */
+  padding: 15px;  /* Увеличенные отступы внутри кнопки */
+  color: white;
+  
+  font-size: 18px;  /* Размер шрифта */
+  margin: 10px 0;  /* Отступы сверху и снизу между кнопками */
+  text-align: center;  /* Центрирование текста */
+  border: none;
+  transition: background-color 0.3s, color 0.3s;  /* Плавный переход при наведении */
+  }
+  
+  .bbb:hover {
+  background-color: rgb(58, 134, 220);  /* Цвет фона при наведении */
+  color: #fff;  /* Цвет текста при наведении */
+  }
+  
+  
+  /* 2 раздел*/
+  .stats {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    text-align: center;  
+    padding: 50px 0;  
+    gap: 150px;  
+    background-color: rgb(243, 240, 250);  
+    height: 70px;  
+    width: 1400px; 
+    border-radius: 100px; 
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto; /* Центрируем блок по горизонтали */
+}
+
+
+  
+  .stat {
+  margin: 0 20px; /* Отступы между элементами */
+  }
+  
+  .stat h2 {
+  font-size: 70px; /* Размер заголовка */
+  color: rgb(56, 115, 183); /* Цвет заголовка */
+  margin: 0; /* Убираем отступы */
+  }
+  
+  .stat p {
+  
+  color:  rgb(62, 127, 201); /* Цвет заголовка */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* 3 раздел*/
+  .team {
+  text-align: center; /* Центрируем текст */
+  padding: 50px 20px; /* Отступы сверху и снизу секции */
+
+  
+  
+  }
+  
+  .team h2 {
+  font-size: 50px; /* Размер заголовка */
+  margin-bottom: 30px; /* Отступ снизу */
+  color: white; /* Цвет заголовка */
+  }
+  
+  
+  
+  .doctors {
+  display: flex; /* Используем flexbox для размещения карточек в ряд */
+  flex-wrap: wrap; /* Перенос карточек */
+  justify-content: center;
+  gap: 150px; /* Промежуток между карточками */
+  }
+  
+  .doctor {
+  display: flex; /* Отображаем элементы внутри карточки в ряд */
+  flex-direction: column; /* Расположение элементов по вертикали */
+  border-radius: 8px; /* Закругленные углы */
+  
+  width: 510px; /* Ширина карточки */
+  height: 510px; /* Высота карточки */
+    align-items: flex-end; /* Устанавливает выравнивание элементов по началу */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+  }
+  
+  
+  .doctor-image {
+  width: 100%; /* Полная ширина карточки */
+
+  overflow: hidden; /* Скрытие переполнений */
+  margin-bottom: 0; /* Убираем нижний отступ */
+  }
+  
+  .doctor-image img {
+  width: 100%; /* Изображение занимает всю ширину контейнера */
+  height: 100%; /* Автоматическая высота для сохранения пропорций */
+  object-fit: cover; /* Позволяет изображению сохранять свои пропорции и обрезается при необходимости */
+  }
+  
+  .doctor-info {
+  
+    background-color: rgb(22, 85, 156); 
+  width: 100%; /* Растянуть текстовую секцию на всю ширину карточки */
+  display: flex;
+  flex-direction: column; /* Вертикальное выравнивание текста */
+  justify-content: center; /* Центрирование текста по высоте */
+  margin-top: 0; /* Убираем верхний отступ */
+  border-radius: 20px;
+  }
+  
+  h3 {
+  margin: 10px 0; /* Отступы для заголовков */
+  font-size: 30px;
+  color: white; /* Цвет заголовка */
+  }
+  
+  p {
+  color: rgb(245, 245, 245); /* Цвет заголовка */
+  font-size: 18px;
+  margin: 5px 0; /* Отступы для параграфов */
+  }
+  
+  .rasp{
+  background-color: white;
+  border-radius: 40px;  /* Закругленные углы */
+  cursor: pointer;  /* Курсор при наведении */
+  width: 70%;  /* Ширина кнопки на всю ширину родительского элемента */
+  padding: 15px;  /* Увеличенные отступы внутри кнопки */
+  color: rgb(22, 85, 156);
+  justify-content: center;
+  font-size: 20px;  /* Размер шрифта */
+  
+  text-align: center;  /* Центрирование текста */
+  border: none;
+  transition: background-color 0.3s, color 0.3s;  /* Плавный переход при наведении */
+  margin: 10px auto; /* Центрируем по горизонтали */
+  }
+  
+  .rasp:hover {
+  background-color: rgb(0, 67, 126);
+  color: white;
+  }
+  
+  /* 4 раздел*/
+  
+  .pricing{
+   
+    border-radius: 0 0 130px 130px;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    height: 100vh; /* Заполняем всю высоту страницы */
+    background-color: rgb(251, 247, 247); /* Фоновый цвет страницы */
+    margin: 0; /* Убираем отступы */
+  }
+
+  h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #024f9f;
+  }
+  
+  main#carousel {
+    grid-row: 1 / 2; 
+    grid-column: 1 / 8; 
+    width: 1000px; 
+    height: 500px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden; 
+    transform-style: preserve-3d; 
+    perspective: 600px; 
+    --items: 5; 
+    --middle: 3; 
+    --position: 1; 
+    pointer-events: none; 
+    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+  }
+  .item p {
+    margin: 15px 0; 
+    color: white; 
+    font-size: 16px; 
+    line-height: 1.5; /* Интерлиньяж для лучшей читаемости */
+}
+.item h2 {
+ 
+ color:  white;
+    font-size: 22px; 
+    line-height: 1.5; /* Интерлиньяж для лучшей читаемости */
+    border-bottom: 2px solid white; 
+    padding-bottom: 5px;
+}
+.item a { 
+            cursor: pointer; 
+            pointer-events: all; 
+            padding: 10px 20px; /* Отступы для кнопки */
+            background-color: #007bff; /* Цвет фона кнопки */
+            color: white; /* Цвет текста кнопки */
+            text-decoration: none; /* Убираем подчеркивание */
+            border-radius: 5px; /* Закругление углов кнопки */
+            transition: background-color 0.3s, transform 0.3s; /* Плавный переход */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для кнопки */
+        }
+
+        .item a:hover { 
+            background-color: #0056b3; /* Цвет фона при наведении */
+            transform: translateY(-2px); /* Легкое поднятие при наведении */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Увеличение тени при наведении */
+        }
+
+
+
+  div.item {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    text-align: center; 
+    height: 400px; /* Устанавливаем высоту карточки */
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    text-align: center; 
+    height: 400px; /* Устанавливаем высоту карточки для центрирования */
+    margin: 0 10px; /* Отступы между карточками */
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))
+      translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+  }
+  
+  div.item:nth-of-type(1) {
+    --offset: 1;
+    background-color: rgb(86, 147, 191);
+  }
+  div.item:nth-of-type(2) {
+    --offset: 2;
+    background-color: #4485b5;
+  }
+  div.item:nth-of-type(3) {
+    --offset: 3;
+    background-color: #306fab;
+  }
+  div.item:nth-of-type(4) {
+    --offset: 4;
+    background-color: #1e5ba4;
+  }
+  div.item:nth-of-type(5) {
+    --offset: 5;
+    background-color: #135098;
+  }
+ 
+  
+  input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(1):checked ~ main#carousel {
+    --position: 1;
+  }
+  
+  input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(2):checked ~ main#carousel {
+    --position: 2;
+  }
+  
+  input:nth-of-type(3) {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(3):checked ~ main#carousel {
+    --position: 3;
+  }
+  
+  input:nth-of-type(4) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(4):checked ~ main#carousel {
+    --position: 4;
+  }
+  
+  input:nth-of-type(5) {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(5):checked ~ main#carousel {
+    --position: 5;
+  }
+
+
+  .image-container {
+            text-align: center; /* Центрируем изображение */
+       
+            border-radius: 20px; 
+            
+       
+
+        }
+
+        .responsive {
+            max-width: 60%; /* Уменьшаем максимальную ширину изображения */
+            height: auto; 
+            border-radius: 10px; 
+       
+            
+        }
+  
+  
+  
+  
+  
+  /**********************************************************/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* 5 раздел*/
+  .faq {
+  padding: 50px 20px; /* Отступы сверху и снизу секции */
+
+  text-align: center; /* Центрируем текст */
+  }
+  
+  .faq h2 {
+  font-size: 50px; /* Размер заголовка */
+  margin-bottom: 30px; /* Отступ снизу */
+  color: white; /* Цвет заголовка */
+  }
+  
+  .faq-item {
+  margin: 15px 0; /* Отступы между вопросами */
+  }
+  
+  .faq-question {  
+
+    color: white; /* Цвет текста */
+    background-color: rgb(50, 132, 209);  
+    padding: 15px; /* Отступы внутри кнопки */
+    font-size: 18px; /* Размер шрифта */
+    cursor: pointer; /* Указатель при наведении */
+    width: 100%; /* Ширина кнопки */
+    border-radius: 5px; /* Закругление углов */
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход для фона и трансформации */
+   
+}
+
+.faq-question:hover { 
+    background-color: rgb(0, 75, 150); /* Цвет фона при наведении */
+    transform: translateY(-2px); /* Поднятие кнопки при наведении */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Увеличение тени при наведении */
+}
+
+.faq-question:focus {
+    outline: none; /* Убираем стандартный контур при фокусе */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Добавляем эффект тени при фокусе */
+}
+
+  
+  .faq-answer {
+  display: none; /* Скрываем ответ по умолчанию */
+  margin-top: 10px; /* Отступ сверху для ответа */
+  padding: 15px; /* Отступы внутри ответа */
+  background-color: rgb(0, 92, 179); /* Цвет фона секции */
+
+  border-radius: 5px; /* Закругляем углы ответа */
+ 
+  }
+  
+  .faq-answer p{
+  color: rgb(234, 234, 250); /* Цвет заголовка */
+  }
+  
+  .faq-item.active .faq-answer {
+  display: block; /* Показываем ответ при активном элементе */
+  }
+  
+  
+  
+  /************************************************************/
+  .clinic-details-section {
+    display: flex; /* Используем Flexbox для размещения изображения и текста */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    margin: 20px 0;
+    background-color: rgb(251, 247, 247);
+    height: 110vh;
+}
+
+.clinic-details-section h1 {
+
+    font-size: 33px;
+    font-style: italic;
+    margin-bottom: 8px; /* Убираем нижний отступ у заголовка */
+   padding: 1px;
+ 
+}
+
+
+.clinic-image-container {
+    flex: 1; /* Занимает 1 часть пространства */
+    text-align: center; /* Центрируем изображение */
+    margin-right: 20px; /* Отступ между изображением и текстом */
+    margin-top: 15vh;
+    max-width: 80%; /* Уменьшаем максимальную ширину изображения */
+    height: 80%; 
+}
+
+.clinic-responsive-image {
+    max-width: 80%; /* Уменьшаем максимальную ширину изображения */
+  height: 80%;
+    border-radius: 5px 5px 150px 150px ;
+
+}
+
+
+
+.clinic-description {
+    flex: 2; /* Занимает 2 части пространства */
+  color: #125296;
+    padding: 20px; /* Отступы вокруг текста */
+ margin-top: 5vh;
+    width: 40%;
+    height: 80vh;
+}
+
+.clinic-description p{
+    
+  color: #2a6cb4;
+  
+}
+.zap{
+margin-bottom: 10%;
+margin-left: 15%;
+  background-color: rgb(0, 67, 126);
+  border-radius: 40px;  /* Закругленные углы */
+  cursor: pointer;  /* Курсор при наведении */
+  width: 70%;  /* Ширина кнопки на всю ширину родительского элемента */
+  padding: 13px;  /* Увеличенные отступы внутри кнопки */
+
+  color: white;
+  justify-content: center;
+  font-size: 20px;  /* Размер шрифта */
+ 
+  text-align: center;  /* Центрирование текста */
+  border: none;
+  transition: background-color 0.3s, color 0.3s;  /* Плавный переход при наведении */
+  
+  }
+  
+  .zap:hover {
+    background-color: rgb(125, 164, 218);
+    color: rgb(22, 85, 156);
+  }
+  
+  
+  
+  
+  /* 6 раздел*/
+  .contacts {
+  padding: 50px 20px; /* Отступы сверху и снизу секции */
+  
+  text-align: center; /* Центрируем текст */
+  }
+  
+  .contacts h2 {
+  font-size: 50px; /* Размер заголовка */
+  margin-bottom: 30px; /* Отступ снизу */
+  color: white; /* Цвет заголовка */
+  }
+  
+  .contact-grid {
+  display: grid; /* Используем CSS Grid для расположения карточек */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Автоматическое распределение карточек */
+  gap: 20px; /* Расстояние между карточками */
+  }
+  
+  .contact-card {
+  
+  background-color: white;
+  border-radius: 10px; /* Закругляем углы */
+  padding: 20px; /* Отступы внутри карточки */
+  
+  }
+  
+  .contact-card h3 {
+  font-size: 20px; /* Размер заголовка в карточке */
+  margin: 0 0 10px; /* Отступы */
+  color: rgb(42, 46, 156); /* Цвет заголовка */
+  }
+  
+  .contact-card p {
+  font-size: 16px; /* Размер текста в карточке */
+  color: rgb(50, 86, 184); /* Цвет текста */
+  }
+  
+  .contacts a{
+  
+    text-decoration: none; /* Убирает подчёркивание */
+    color: rgb(50, 86, 184); /* Цвет текста */
+  }
+  
+  .contacts a:hover {
+  color: rgb(26, 45, 49); /* Цвет заголовка */
+    transition: color 0.3s; /* Плавный переход цвета */
+  }
+  
+  
+
+
+
+
+
+  .map-container {
+            max-width: 1430px; /* Максимальная ширина контейнера карты */
+            margin: 0 auto; /* Центрируем контейнер */
+           
+            overflow: hidden; /* Скрываем переполнение */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+        }
+
+        iframe {
+            width: 100%; /* Ширина карты на 100% */
+            height: 400px; /* Высота карты */
+            border: 0; /* Убираем рамку */
+        }
+
+
+
+
+
+  .footer p {
+  padding: 20px; /* Отступы внутри футера */
+  
+  color: white; /* Цвет заголовка */
+  text-align: center; /* Центрируем текст */
+  position: relative; /* Относительное позиционирование */
+  bottom: 0; /* Прикрепляем футер к низу страницы */
+  width: 100%; /* Ширина футера */
+  font-size: 20px; /* Размер шрифта */
+  }
+  </style>
+       
+</head>  
+<body>  
+    <header class="header">  
+        <a href="#" class="logo">АСТРАДЕНТ</a>  
+        <nav class="menu">  
+            <ul>  
+                <li><a href="#about-us">О нас</a></li> 
+                <li><a href="#doctors">Врачи</a></li>  
+                <li><a href="#uslugi">Услуги</a></li> 
+                <li><a href="#contacts">Контакты</a></li> 
+                <li><a href="tel:+73472826381" class="nomer">+7 (347) 282-63-81</a></li> 
+                <li><button class="sv" onclick="location.href='index.php'">Личный кабинет</button></li> 
+            </ul>  
+        </nav>  
+    </header>  
+
+    <main>  
+        <!--1 страничка--> 
+        <section class="about-us">        
+            <div class="info"> 
+                <h2>Улыбка здоровья</h2> 
+               <h3>Идеальные зубы должны быть у всех!</h3>
+               <button class="bbb" onclick="downloadFile()">Стоимость услуг</button>
+            </div>
+            <div class="image">
+                <img src="glav.jpg" class="image1">
+            </div>
+        </section> 
+
+    <!--2 страничка--> 
+        <section class="stats"  id="about-us">
+            <div class="stat">
+                <h2>10+</h2>
+                <p>лет опыта</p>
+            </div>
+            <div class="stat">
+                <h2>1000+</h2>
+                <p>счастливых улыбок</p>
+            </div>
+            <div class="stat">
+                <h2>20+</h2>
+                <p>услуг на выбор</p>
+            </div>
+
+
+
+           
+
+        </section>
+ 
+
+
+
+
+   <!--3 страничка--> 
+   <section class="team" id="doctors">
+    <h2>Команда опытных врачей</h2>
+    
+    <div class="doctors">
+        <div class="doctor">
+            <div class="doctor-image">
+                <img src="doctor1.jpg" alt="Максимова Ангелина Андреевна">
+            </div>
+            <div class="doctor-info">
+                <h3>Максимова Ангелина Андреевна</h3>
+                <p>Хирург, главный врач</p>
+                <p>Стаж: 15 лет</p>
+                <button class="rasp" onclick="location.href='index.php'">Записаться на приём</button>
+            </div>
+        </div>
+        
+        <div class="doctor">
+            <div class="doctor-image">
+                <img src="doctor1.jpg" alt="Матюшина Ирина Владимировна">
+            </div>
+            <div class="doctor-info">
+                <h3>Матюшина Ирина Владимировна</h3>
+                <p>Терапевт-микроскопист</p>
+                <p>Стаж: 25 лет</p>
+                <button class="rasp" onclick="location.href='index.php'">Записаться на приём</button>
+            </div>
+        </div>
+        
+    
+    </div>
+</section>
+        
+      <!--4 страничка--> 
+      <section class="pricing" id="uslugi">
+        <h1>Наши услуги</h1> 
+        <input type="radio" name="position"  /> 
+        <input type="radio" name="position" /> 
+        <input type="radio" name="position" checked /> 
+        <input type="radio" name="position" /> 
+        <input type="radio" name="position" /> 
+      
+        <main id="carousel"> 
+          <div class="item"> 
+            <div class="image-container">
+            <img src="11.png" alt="Диагностика зубов" class="responsive"></div>
+          <h2>  Диагностика зубов</h2>
+            <p> Раннее выявление заболеваний позволяет предотвратить 
+            их дальнейшее развитие и сохранить здоровье полости рта. Регулярные визиты к стоматологу 
+            для диагностики помогают поддерживать хорошую гигиену полости рта и обеспечивают своевременное лечение.</p>
+            <a href="http://localhost/diagnostika.html">Подробнее</a>
+          </div> 
+          
+          <div class="item">  <div class="image-container">
+            <img src="12.png" alt="Диагностика зубов" class="responsive">
+        </div><h2>Терапевтическая стоматология</h2><p>Терапевтическая стоматология
+             также направлена на сохранение зубов и восстановление их функции, 
+             что способствует общему улучшению здоровья полости рта.</p>
+        <a href="http://localhost/terapiya.html">Подробнее</a></div> 
+
+          <div class="item">  <div class="image-container">
+            <img src="13.png" alt="Диагностика зубов" class="responsive">
+        </div><h2>Эстетическая стоматология</h2><p>Эстетическая стоматология — это область
+             стоматологии, сосредоточенная на улучшении внешнего вида зубов и улыбки. Она включает в себя 
+             процедуры, такие как отбеливание зубов, установка виниров, композитных реставраций и ортодонтическое лечение. </p>
+        <a href="http://localhost/estetik.html">Подробнее</a></div> 
+
+          <div class="item">  <div class="image-container">
+            <img src="16.png" alt="Диагностика зубов" class="responsive">
+        </div><h2>Протезирование зубов</h2><p>Правильное протезирование способствует улучшению 
+            качества жизни и уверенности пациента в себе. Регулярное обслуживание и уход за протезами 
+            важны для их долговечности и здоровья полости рта.</p>
+        <a href="http://localhost/protez.html">Подробнее</a></div> 
+
+          <div class="item">  <div class="image-container">
+            <img src="15.png" alt="Диагностика зубов" class="responsive">
+        </div><h2>Ортодонтия</h2><p>Ортодонтия — это раздел стоматологии, занимающийся 
+            диагностикой и коррекцией неправильного прикуса и аномалий зубочелюстной системы. 
+            Основная цель ортодонтии — исправление положения зубов и челюстей для улучшения функциональности, 
+            эстетики и здоровья полости рта.</p>
+        <a href="http://localhost/ortodontiya.html">Подробнее</a></div> 
+        </main> 
+   
+    
+      
+    </section>
+    
+   
+
+
+
+ <!--5 страничка--> 
+    <section class="faq">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="faq-item">
+            <button class="faq-question">Как записаться на прием?</button>
+            <div class="faq-answer">
+                <p>Вы можете записаться на прием по телефону или через личный кабинет.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Как войти в личный кабинет?</button>
+            <div class="faq-answer">
+                <p>Для того чтобы зайти в личный кабинет нужно посетить нашу стоматологию и пройти регистрацию у администратора.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Что находится в личном кабинете?</button>
+            <div class="faq-answer">
+                <p>В своём личном кабинете Вы можете посмотреть даты посещения нашей клиники, рекомендации от врача, а также возможность записаться на приём.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Сколько стоит первичная консультация?</button>
+            <div class="faq-answer">
+                <p>Первичная консультация стоит 500 рублей, включая осмотр и рекомендации врача.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Как я могу оплатить услуги?</button>
+            <div class="faq-answer">
+                <p>Оплатить услуги можно наличными, банковской картой или qr-кодом.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+     <!--страничка о клинике--> 
+
+     <section class="clinic-details-section"> 
+      <div class="clinic-image-container"> 
+          <img src="klinika.jpg" alt="Клиника Астрадент" class="clinic-responsive-image"> 
+      </div> 
+      <div class="clinic-description"> 
+          <h2>Коротко о нас</h2> 
+          <p>Стоматология «Астрадент» находится в Советском районе города Уфы. Это высокотехнологичная клиника, которая оказывает услуги по безболезненному лечению зубов и восстановлению жевательной функции. Работа компании регламентирована лицензионными документами от 28 января 2015 года.</p> 
+          <h2>Услуги</h2> 
+         <p>В стенах стоматологии «Астрадент» пациентам предлагаются услуги общего плана: первичный осмотр, экспертные консультации и компьютерная томография зубочелюстной системы. По результатам исследований подбирается программа индивидуального лечения. Она включает следующие виды терапевтических мероприятий: обезболивание, наложение коффердама, препарирование полости, лечение каналов, наложение светоотверждаемой пломбы, покрытие зубов фторсодержащим препаратом, удаление пигментированного налета и зубного камня. В клинике также выполняется ряд процедур по протезированию. К установке пациентам предлагаются: накладки, вкладки, бюгельные протезы, коронки из металла и оксида циркония.</p> 
+         <h2>Проезд</h2>
+          <p>  До стоматологии «Астрадент» удобнее всего будет добираться следующими видами муниципального транспорта: автобусами № 30к, 39, 51, 57, 74, 75, 110, 122, 126к, 164т, 226, 266, 290, 432а, троллейбусом № 13 и маршрутными такси № 122, 131, 163, 163д, 171, 211, 220, 224, 228, 233, 247, 248, 249, 266, 270, 277, 285, 298. Высадившись на остановке «Универмаг Уфа», необходимо пройти по проспекту Октября в сторону дома № 28. Расстояние до медучреждения составляет 150 метров.  </p>
+
+         <h1>Запишитесь на прием и сделайте первый шаг к здоровой улыбке!</h1> 
+         <button class="zap" onclick="location.href='index.php'">Записаться на приём</button>
+      </div> 
+  </section>
+ 
+   
+       
+<!--6 страничка--> 
+<section class="contacts" id="contacts">
+    <h2>Контакты</h2>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <h3>Телефон</h3>
+          
+            <p><a href="tel:+7(987)102-05-55">+7(987)102-05-55 </a></p>
+            <p><a href="tel:+7(917)778-93-37">+7(917)778-93-37 </a></p>
+        </div>
+        <div class="contact-card">
+            <h3>Email</h3>
+            <p><a href="mailto:timurrimovich@mail.ru">timurrimovich@mail.ru</a></p>
+        </div>
+        <div class="contact-card">
+            <h3>Адрес</h3>
+            <p>Уфа, пр-т Октября, 28</p>
+            <p>Остановка: "Универмаг Уфа"</p>
+        </div>
+        <div class="contact-card">
+            <h3>Часы работы</h3>
+            <p>Пн-Пт: 9:00-21:00</p>
+            <p>Сб-Вск: Выходной</p>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2302.735276187027!2d55.996001076747056!3d54.74945797272936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d939f4ab8add29%3A0xf06545d4496c6b97!2z0JDRgdGC0YDQsNC00LXQvdGCLCDRgdGC0L7QvNCw0YLQvtC70L7Qs9C40YfQtdGB0LrQuNC5INC60LDQsdC40L3QtdGC!5e0!3m2!1sru!2sru!4v1737557070918!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+
+
+                 <footer class="footer">
+                    <p>© 2025 Астрадент. Все права защищены.</p>
+                </footer>
+    </main>
+    <script src="astra.js" defer></script>
+</body>  
+</html>  
